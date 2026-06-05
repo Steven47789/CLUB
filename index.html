@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Club Deportivo | Amigos Peloteros - Huacho</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <section class="hero">
+        <div class="hero-slides">
+            <div class="slide active" style="background-image: url('img/04.webp');"></div>
+            <div class="slide" style="background-image: url('img/05.webp');"></div>
+            <div class="slide" style="background-image: url('img/06.webp');"></div>
+        </div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="hero-title">
+                Club Deportivo<br>
+                <span class="hero-highlight">Amigos Peloteros</span><br>
+                <span class="hero-location">• HUACHO •</span>
+            </h1>
+        </div>
+        <button class="hero-nav hero-prev" aria-label="Anterior"><i class="fas fa-chevron-left"></i></button>
+        <button class="hero-nav hero-next" aria-label="Siguiente"><i class="fas fa-chevron-right"></i></button>
+        <div class="hero-dots"></div>
+    </section>
+
+    <section class="club-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">IDENTIDAD</span>
+                <h2>Más que un club, una familia</h2>
+                <div class="section-divider"></div>
+            </div>
+
+            <div class="philosophy-text">
+                <p>El Club Deportivo Amigos Peloteros nació para poder juntar a jóvenes de Huacho y alrededores. Sin colores de moda ni promesas vacías. Acá el fútbol se vive con orgullo, sin estrellas, con la camiseta que se lava en casa.</p>
+            </div>
+
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <span class="stat-number" data-target="36">0</span>
+                    <span class="stat-label">años de historia</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-number" data-target="383">0</span>
+                    <span class="stat-label">INTEGRANTES</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-number" data-target="218">0</span>
+                    <span class="stat-label">PARTIDOS JUGADOS</span>
+                </div>
+            </div>
+
+            <div class="carousel-section">
+                <div class="carousel-header">
+                    <span class="carousel-badge">
+                        <i class="fas fa-camera"></i> GALERÍA
+                    </span>
+                    <div class="carousel-controls">
+                        <button class="carousel-control-btn" id="carouselPrevBtn">
+                            <i class="fas fa-chevron-left"></i>
+                        </button>
+                        <span class="carousel-counter">
+                            <span id="currentSlide">1</span> / <span id="totalSlides">3</span>
+                        </span>
+                        <button class="carousel-control-btn" id="carouselNextBtn">
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="carousel-main">
+                    <div class="carousel-viewport">
+                        <div class="carousel-track" id="carouselTrack">
+                            <div class="carousel-slide">
+                                <img src="img/01.webp" alt="Acción en la cancha" loading="lazy">
+                                <div class="carousel-caption">
+                                    <i class="fas fa-futbol"></i>
+                                    <span>Pasión sobre el césped</span>
+                                </div>
+                            </div>
+                            <div class="carousel-slide">
+                                <img src="img/02.webp" alt="Celebración del equipo" loading="lazy">
+                                <div class="carousel-caption">
+                                    <i class="fas fa-trophy"></i>
+                                    <span>Más de 200 partidos</span>
+                                </div>
+                            </div>
+                            <div class="carousel-slide">
+                                <img src="img/03.webp" alt="La familia del club" loading="lazy">
+                                <div class="carousel-caption">
+                                    <i class="fas fa-heart"></i>
+                                    <span>Más que amigos, hermanos</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <button class="carousel-nav-btn carousel-prev-btn" id="carouselPrev">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <button class="carousel-nav-btn carousel-next-btn" id="carouselNext">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+                
+                <div class="carousel-dots" id="carouselDots">
+                    <span class="dot active"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="pillars-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">NUESTROS PILARES</span>
+                <h2>Compromiso y Pertenencia</h2>
+                <div class="section-divider"></div>
+            </div>
+
+            <div class="pillars-grid">
+                <div class="pillar">
+                    <div class="pillar-icon"><i class="fas fa-hand-peace"></i></div>
+                    <h3>Compromiso</h3>
+                    <p>La palabra vale más que un contrato. Acá se cumple.</p>
+                </div>
+                <div class="pillar">
+                    <div class="pillar-icon"><i class="fas fa-users"></i></div>
+                    <h3>Pertenencia</h3>
+                    <p>El barrio nos dió todo, y nosotros le devolvemos fútbol y pasión.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección PARTIDOS con efecto PARALLAX -->
+    <div class="cancha-bg-section parallax-section">
+        <div class="cancha-bg-overlay"></div>
+        
+        <section class="schedule-section">
+            <div class="container">
+                <div class="section-header light">
+                    <span class="section-tag light">PARTIDOS</span>
+                    <h2>Horarios de Cancha</h2>
+                    <div class="section-divider light"></div>
+                </div>
+
+                <div class="schedule-scroll-container">
+                    <div class="schedule-scroll-wrapper">
+                        <div class="schedule-day-card">
+                            <div class="day-header">LUNES</div>
+                            <div class="day-times">
+                                <div class="day-time">
+                                    <span class="turno-label">PRIMER TURNO</span>
+                                    <span class="turno-horario">19:20 — 21:00</span>
+                                </div>
+                                <div class="day-time">
+                                    <span class="turno-label">SEGUNDO TURNO</span>
+                                    <span class="turno-horario">21:50 — 23:30</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="schedule-day-card">
+                            <div class="day-header">MARTES</div>
+                            <div class="day-times">
+                                <div class="day-time">
+                                    <span class="turno-label">PRIMER TURNO</span>
+                                    <span class="turno-horario">19:20 — 21:00</span>
+                                </div>
+                                <div class="day-time">
+                                    <span class="turno-label">SEGUNDO TURNO</span>
+                                    <span class="turno-horario">21:50 — 23:30</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="schedule-day-card">
+                            <div class="day-header">MIÉRCOLES</div>
+                            <div class="day-times">
+                                <div class="day-time">
+                                    <span class="turno-label">PRIMER TURNO</span>
+                                    <span class="turno-horario">19:20 — 21:00</span>
+                                </div>
+                                <div class="day-time">
+                                    <span class="turno-label">SEGUNDO TURNO</span>
+                                    <span class="turno-horario">21:50 — 23:30</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="schedule-day-card">
+                            <div class="day-header">JUEVES</div>
+                            <div class="day-times">
+                                <div class="day-time">
+                                    <span class="turno-label">PRIMER TURNO</span>
+                                    <span class="turno-horario">19:20 — 21:00</span>
+                                </div>
+                                <div class="day-time">
+                                    <span class="turno-label">SEGUNDO TURNO</span>
+                                    <span class="turno-horario">21:50 — 23:30</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="schedule-day-card">
+                            <div class="day-header">VIERNES</div>
+                            <div class="day-times">
+                                <div class="day-time">
+                                    <span class="turno-label">PRIMER TURNO</span>
+                                    <span class="turno-horario">19:20 — 21:00</span>
+                                </div>
+                                <div class="day-time">
+                                    <span class="turno-label">SEGUNDO TURNO</span>
+                                    <span class="turno-horario">21:50 — 23:30</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="schedule-day-card">
+                            <div class="day-header">SÁBADO</div>
+                            <div class="day-times">
+                                <div class="day-time">
+                                    <span class="turno-label">PRIMER TURNO</span>
+                                    <span class="turno-horario">19:20 — 21:00</span>
+                                </div>
+                                <div class="day-time">
+                                    <span class="turno-label">SEGUNDO TURNO</span>
+                                    <span class="turno-horario">21:50 — 23:30</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="scroll-indicator light">
+                    <i class="fas fa-chevron-left"></i>
+                    <span>Desliza para ver más días →</span>
+                    <i class="fas fa-chevron-right"></i>
+                </div>
+
+                <div class="schedule-footer">
+                    <div class="schedule-note-card">
+                        <p>Acercate 15 minutos antes con indumentaria clara. Sin compromiso, solo fútbol y respeto.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="match-section">
+            <div class="container">
+                <div class="match-card" id="liveMatchCard">
+                    <div class="match-status" id="matchStatus">
+                        <i class="fas fa-circle"></i>
+                        <span id="statusText">Cargando...</span>
+                    </div>
+                    <div class="match-day" id="matchDay">
+                        <i class="fas fa-calendar-alt"></i>
+                        <span id="dayText">Cargando día...</span>
+                    </div>
+                    <div class="match-info-row">
+                        <div class="match-schedule-info" id="matchScheduleInfo">
+                            <span id="turnoInfo">Cargando horario...</span>
+                        </div>
+                        <div class="match-location">
+                            <i class="fas fa-location-dot"></i>
+                            <span>Segundo Aranda Torres · Huacho</span>
+                        </div>
+                    </div>
+                    <a href="https://www.tiktok.com/@tucuenta" target="_blank" class="match-cta" id="liveBtn">
+                        <i class="fab fa-tiktok"></i> Ver directo →
+                    </a>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <section class="support-section">
+        <div class="container">
+            <div class="support-grid">
+                <div class="support-content">
+                    <span class="section-tag light">SUMATE</span>
+                    <h2>Hagamos crecer el club</h2>
+                    <p>Tu aporte, grande o chico, mantiene vivas nuestras categorías, la cancha y la sede social.</p>
+                    <div class="support-actions">
+                        <button class="support-btn-secondary">Contactar comisión <i class="fab fa-whatsapp"></i></button>
+                    </div>
+                </div>
+                <div class="support-benefits">
+                    <div class="benefit-item">
+                        <i class="fas fa-shirt"></i>
+                        <span>Chaleco para jugadores</span>
+                    </div>
+                    <div class="benefit-item">
+                        <i class="fas fa-beer-mug-empty"></i>
+                        <span>Premio para los ganadores</span>
+                    </div>
+                    <div class="benefit-item">
+                        <i class="fas fa-ticket"></i>
+                        <span>Participación en rifas mensuales</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>Amigos Peloteros</h3>
+                    <p>Club Deportivo · Huacho</p>
+                    <div class="footer-social">
+                        <a href="https://www.facebook.com/" target="_blank" class="social-icon" aria-label="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://www.instagram.com/" target="_blank" class="social-icon" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://www.tiktok.com/" target="_blank" class="social-icon" aria-label="TikTok">
+                            <i class="fab fa-tiktok"></i>
+                        </a>
+                        <a href="https://wa.me/51987654321" target="_blank" class="social-icon" aria-label="WhatsApp">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                        <a href="https://www.youtube.com/" target="_blank" class="social-icon" aria-label="YouTube">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-copyright">
+                <p>© 2026 Club Deportivo Amigos Peloteros. Fútbol con alma de barrio.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
